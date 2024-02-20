@@ -8,9 +8,9 @@ export const LoginForm = () => {
         <CardWrapper 
             headerLabel='Welcome back'
             backButtonLabel="Don't have an account?"
-            backButtonHref='auth/register'
+            backButtonHref='/auth/register'
             showSocial
-        > 
+        > <p className=' text-sm text-zinc-700 font-semibold'>LOGIN</p>
         </CardWrapper>
 
         
