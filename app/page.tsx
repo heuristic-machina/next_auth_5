@@ -19,11 +19,11 @@ export default function Home() {
           )}>
           Auth 🔒
         </h1>
-        <p className='text-amber-600 text-lg'>
+        <p className='text-amber-600 text-lg mt-8'>
           A simple authentication service
         </p>
         <LoginButton>
-          <Button size='lg'>
+          <Button className='mt-8' size='lg'>
             Sign in
           </Button>
         </LoginButton>
