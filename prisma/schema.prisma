@@ -2,6 +2,11 @@ generator client {
   provider = "prisma-client-js"
 }
 
+enum UserRole {
+  ADMIN
+  USER
+}
+
 datasource db {
   provider  = "postgresql"
   url  	    = env("DATABASE_URL")
@@ -14,6 +19,7 @@ model User {
   emailVerified DateTime?
   image         String?
   password      String?
+  role          UserRole  @default(USER)
   accounts      Account[]
 }
 model Account {
